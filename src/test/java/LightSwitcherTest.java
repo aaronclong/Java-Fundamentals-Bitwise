@@ -17,10 +17,10 @@ public class LightSwitcherTest {
         int expected3 = 0b10101111;
         int result4 = LightSwitcher.turnOnSwitches(flippedBaseByte, 0b00001111);
         int expected4 = 0b01011111;
-        Assert.assertEquals(result1, expected1);
-        Assert.assertEquals(result2, expected2);
-        Assert.assertEquals(result3, expected3);
-        Assert.assertEquals(result4, expected4);
+        Assert.assertEquals(expected1, result1);
+        Assert.assertEquals(expected2, result2);
+        Assert.assertEquals(expected3, result3);
+        Assert.assertEquals(expected4, result4);
     }
 
     @Test
@@ -29,10 +29,10 @@ public class LightSwitcherTest {
         int result2 = LightSwitcher.turnOnAllSwitches(flippedBaseByte);
         int result3 = LightSwitcher.turnOnAllSwitches(0b11111111);
         int result4 = LightSwitcher.turnOnAllSwitches(0b00000000);
-        Assert.assertEquals(result1, 0b11111111);
-        Assert.assertEquals(result2, 0b11111111);
-        Assert.assertEquals(result3, 0b11111111);
-        Assert.assertEquals(result4, 0b11111111);
+        Assert.assertEquals(0b11111111, result1);
+        Assert.assertEquals(0b11111111, result2);
+        Assert.assertEquals(0b11111111, result3);
+        Assert.assertEquals(0b11111111, result4);
     }
 
     @Test
@@ -45,10 +45,10 @@ public class LightSwitcherTest {
         int expected3 = 0b10100000;
         int result4 = LightSwitcher.turnOffSwitches(flippedBaseByte, 0b00001111);
         int expected4 = 0b01010000;
-        Assert.assertEquals(result1, expected1);
-        Assert.assertEquals(result2, expected2);
-        Assert.assertEquals(result3, expected3);
-        Assert.assertEquals(result4, expected4);
+        Assert.assertEquals(expected1, result1);
+        Assert.assertEquals(expected2, result2);
+        Assert.assertEquals(expected3, result3);
+        Assert.assertEquals(expected4, result4);
     }
 
     @Test
@@ -57,10 +57,10 @@ public class LightSwitcherTest {
         int result2 = LightSwitcher.turnOffAllSwitches(flippedBaseByte);
         int result3 = LightSwitcher.turnOffAllSwitches(0b11111111);
         int result4 = LightSwitcher.turnOffAllSwitches(0b00000000);
-        Assert.assertEquals(result1, 0b00000000);
-        Assert.assertEquals(result2, 0b00000000);
-        Assert.assertEquals(result3, 0b00000000);
-        Assert.assertEquals(result4, 0b00000000);
+        Assert.assertEquals(0b00000000, result1);
+        Assert.assertEquals(0b00000000, result2);
+        Assert.assertEquals(0b00000000, result3);
+        Assert.assertEquals(0b00000000, result4);
     }
 
     @Test
@@ -85,10 +85,10 @@ public class LightSwitcherTest {
         int result2 = LightSwitcher.flipAllSwitches(flippedBaseByte);
         int result3 = LightSwitcher.flipAllSwitches(0b11111111);
         int result4 = LightSwitcher.flipAllSwitches(0b00000000);
-        Assert.assertEquals(result1, 0b01010101);
-        Assert.assertEquals(result2, 0b10101010);
-        Assert.assertEquals(result3, 0b00000000);
-        Assert.assertEquals(result4, 0b11111111);
+        Assert.assertEquals( 0b01010101, result1);
+        Assert.assertEquals(0b10101010, result2);
+        Assert.assertEquals(0b00000000, result3);
+        Assert.assertEquals( 0b11111111, result4);
     }
 
     @Test
