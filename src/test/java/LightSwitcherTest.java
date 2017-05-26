@@ -1,11 +1,19 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class LightSwitcherTest {
-    private int baseByte = 0b10101010;
-    private int flippedBaseByte = 0b01010101;
+
+    private int baseByte;
+    private int flippedBaseByte;
+
+    @Before
+    public void setUp() {
+        baseByte = 0b10101010;
+        flippedBaseByte = 0b01010101;
+    }
 
     @Test
     public void testTurnOnSwitches() {
