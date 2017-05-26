@@ -122,14 +122,14 @@ public class LightSwitcherTest {
         int expected6 = 0b00000010;
         int expected7 = 0b00000001;
         int expected8 = 0b00000000;
-        Assert.assertEquals(result1, expected1);
-        Assert.assertEquals(result2, expected2);
-        Assert.assertEquals(result3, expected3);
-        Assert.assertEquals(result4, expected4);
-        Assert.assertEquals(result5, expected5);
-        Assert.assertEquals(result6, expected6);
-        Assert.assertEquals(result7, expected7);
-        Assert.assertEquals(result8, expected8);
+        Assert.assertEquals(expected1, result1);
+        Assert.assertEquals(expected2, result2);
+        Assert.assertEquals(expected3, result3);
+        Assert.assertEquals(expected4, result4);
+        Assert.assertEquals(expected5, result5);
+        Assert.assertEquals(expected6, result6);
+        Assert.assertEquals(expected7, result7);
+        Assert.assertEquals(expected8, result8);
     }
 
     @Test
@@ -150,14 +150,14 @@ public class LightSwitcherTest {
         int expected6 = 0b10000000;
         int expected7 = 0b00000000;
         int expected8 = 0b00000000;
-        Assert.assertEquals(result1, expected1);
-        Assert.assertEquals(result2, expected2);
-        Assert.assertEquals(result3, expected3);
-        Assert.assertEquals(result4, expected4);
-        Assert.assertEquals(result5, expected5);
-        Assert.assertEquals(result6, expected6);
-        Assert.assertEquals(result7, expected7);
-        Assert.assertEquals(result8, expected8);
+        Assert.assertEquals(expected1, result1);
+        Assert.assertEquals(expected2, result2);
+        Assert.assertEquals(expected3, result3);
+        Assert.assertEquals(expected4, result4);
+        Assert.assertEquals(expected5, result5);
+        Assert.assertEquals(expected6, result6);
+        Assert.assertEquals(expected7, result7);
+        Assert.assertEquals(expected8, result8);
     }
 
     @Test

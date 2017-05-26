@@ -13,7 +13,7 @@ public class LightSwitcher {
      * NOTE: If the initial state of a switch is already turned on, do not turn it off.
      */
     public static int turnOnSwitches(int switches, int switchesToTurnOn) {
-        
+        return switches;
     }
 
     /**
@@ -21,7 +21,7 @@ public class LightSwitcher {
      * Remember to use bit notation (0bxxxxxxxx) and a bit operator.
      */
     public static int turnOnAllSwitches(int switches) {
-        
+        return switches;
     }
 
     /**
@@ -30,7 +30,7 @@ public class LightSwitcher {
      * And a '1' in a position in 'switchesToTurnOff' means to turn that switch to off.
      */
     public static int turnOffSwitches(int switches, int switchesToTurnOff) {
-        
+        return switches;
     }
 
     /**
@@ -38,7 +38,7 @@ public class LightSwitcher {
      * Remember to use bit notation and a bit operator.
      */
     public static int turnOffAllSwitches(int switches) {
-        
+        return switches;
     }
 
     /**
@@ -47,7 +47,7 @@ public class LightSwitcher {
      * I.E switches = 1 0 1 and switchesToFlip = 1 1 0 should return 0 1 1.
      */
     public static int flipSwitches(int switches, int switchesToFlip) {
-        
+        return switches;
     }
 
     /**
@@ -55,7 +55,7 @@ public class LightSwitcher {
      * NOTE: An integer has more than 8 bits, so find a way to only return the rightmost 8 bits.
      */
     public static int flipAllSwitches(int switches) {
-        
+        return switches;
     }
 
     /**
@@ -64,14 +64,14 @@ public class LightSwitcher {
      * So, a byte reads 76543210
      */
     public static int getSwitchPositionAt(int switches, int position) {
-        
+        return switches;
     }
 
     /**
      * Move all the the bits to the right `count` places.
      */
     public static int moveRightBy(int switches, int count) {
-        
+        return switches;
     }
 
     /**
@@ -79,7 +79,7 @@ public class LightSwitcher {
      * NOTE: An integer has more than 8 bits, so find a way to only return the rightmost 8 bits.
      */
     public static int moveLeftBy(int switches, int count){
-        
+        return switches;
     }
 
     /**
