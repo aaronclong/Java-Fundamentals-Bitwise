@@ -1,3 +1,6 @@
+import java.util.BitSet;
+import java.nio.ByteBuffer;
+
 /**
  * This lab is just a practice in bitwise operations.  Though all of the return and arg types are ints,
  *    pretend that they're bytes.  That is, all of the tests are passing in values that are only 8 bits.
@@ -8,12 +11,13 @@
  */
 public class LightSwitcher {
 
+
     /**
      * Take a given input of switches, and the switches to turn on, and return the new state of the switches.
      * NOTE: If the initial state of a switch is already turned on, do not turn it off.
      */
     public static int turnOnSwitches(int switches, int switchesToTurnOn) {
-        return switches;
+        return switches | switchesToTurnOn;
     }
 
     /**
@@ -21,7 +25,7 @@ public class LightSwitcher {
      * Remember to use bit notation (0bxxxxxxxx) and a bit operator.
      */
     public static int turnOnAllSwitches(int switches) {
-        return switches;
+        return switches | 0b11111111;
     }
 
     /**
@@ -30,7 +34,7 @@ public class LightSwitcher {
      * And a '1' in a position in 'switchesToTurnOff' means to turn that switch to off.
      */
     public static int turnOffSwitches(int switches, int switchesToTurnOff) {
-        return switches;
+        return switches & (~switchesToTurnOff);
     }
 
     /**
@@ -38,7 +42,7 @@ public class LightSwitcher {
      * Remember to use bit notation and a bit operator.
      */
     public static int turnOffAllSwitches(int switches) {
-        return switches;
+        return switches & 0b00000000;
     }
 
     /**
@@ -47,7 +51,7 @@ public class LightSwitcher {
      * I.E switches = 1 0 1 and switchesToFlip = 1 1 0 should return 0 1 1.
      */
     public static int flipSwitches(int switches, int switchesToFlip) {
-        return switches;
+        return switches ^ switchesToFlip;
     }
 
     /**
@@ -55,7 +59,7 @@ public class LightSwitcher {
      * NOTE: An integer has more than 8 bits, so find a way to only return the rightmost 8 bits.
      */
     public static int flipAllSwitches(int switches) {
-        return switches;
+        return (switches >>> 2);
     }
 
     /**

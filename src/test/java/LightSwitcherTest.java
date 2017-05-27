@@ -61,6 +61,7 @@ public class LightSwitcherTest {
 
     @Test
     public void testTurnOffAllSwitches() {
+        //0b10101010
         int result1 = LightSwitcher.turnOffAllSwitches(baseByte);
         int result2 = LightSwitcher.turnOffAllSwitches(flippedBaseByte);
         int result3 = LightSwitcher.turnOffAllSwitches(0b11111111);
